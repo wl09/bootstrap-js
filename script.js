@@ -1,8 +1,10 @@
+//Validates Email Format
+
 function validateEmail(email) {
 return email.includes("@") && email.includes(".");
 }
 
-
+//Gets a Random Featured Event Title
 const featuredEvents = [
     "FireKeepers Casino 400",
     "The French Open Women's Singles Final",
@@ -13,6 +15,8 @@ function getRandomFeaturedEvent() {
    return featuredEvents[index];
 }
 
+
+//Calculates Total Tickets Price
 function calculateTotalPrice(tickets) {
   return tickets.reduce((total, ticket) => total + (ticket.price * ticket.quantity), 0);
 }
